@@ -1,8 +1,7 @@
-# transcription-d-lucea
+# Transcription d-lucea
 
 Include a short description of the repository/project here (few sentences)
 
-<!-- GETTING STARTED -->
 ## Getting Started
 
 Guide to get a local copy of this project up and running.
@@ -16,6 +15,8 @@ To install and run this project you need to have the following prerequisites ins
 - soundfile
 - whisper
 - whisperX
+
+We recommend creating using Conda to create a Python environment and following the [setup instructions for WhisperX](https://github.com/m-bain/whisperX#setup-%EF%B8%8F) to create an environment.
 
 ### Installation
 
