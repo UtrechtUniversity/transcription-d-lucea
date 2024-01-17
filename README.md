@@ -38,9 +38,6 @@ Remember to divide the [Usage](#Usage) section in subsections for clarity.
 ```sh
 python -m example.py
 ```
-
-
-<!-- ABOUT THE PROJECT -->
 ## About the Project
 
 **Date**: Month Year
@@ -61,8 +58,6 @@ The code in this project is released under [MIT license](LICENSE).
 
 ### Attribution and academic use
 
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
 Contributions are what make the open source community an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -75,9 +70,4 @@ To contribute:
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<!-- CONTACT -->
 ## Contact
-
-Contact Name - [@twitterhandle](https://twitter.com/username) - contact.rse@uu.nl
-
-Project Link: [https://github.com/UtrechtUniversity/projectlink](https://github.com/UtrechtUniversity/projectlink)
