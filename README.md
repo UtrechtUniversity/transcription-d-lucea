@@ -4,40 +4,64 @@ Include a short description of the repository/project here (few sentences)
 
 ## Getting Started
 
-Guide to get a local copy of this project up and running.
+Clone this repository to get a copy on your PC.
+
+`git clone https://github.com/UtrechtUniversity/transcription-d-lucea.git`
 
 ### Prerequisites
 
 To install and run this project you need to have the following prerequisites installed.
 
+- ffmpeg
 - pandas
 - librosa
 - soundfile
 - whisper
 - whisperX
 
-We recommend creating using Conda to create a Python environment and following the [setup instructions for WhisperX](https://github.com/m-bain/whisperX#setup-%EF%B8%8F) to create an environment.
+It is recommended to use a GPU powered computer (or server) for creating transcripts. With a recent GPU you can produce transcripts using the state-of-the-art Whisper models in a few seconds. At UtrechtUniversity you can get access to a VRE with a GPU via [RDM support](https://www.uu.nl/en/research/research-data-management/tools-services/software-and-computing/virtual-research-environments).
 
 ### Installation
 
-To run the project, ensure to install the project's dependencies.
+We recommend using Conda to create a Python environment for this project.  
+First follow the [setup instructions for WhisperX](https://github.com/m-bain/whisperX#setup) to create an environment.
 
-```sh
-pip install -r requirements.txt
+Additionally install Whisper and ffmpeg using the [setup instructions for Whisper](https://github.com/openai/whisper#setup)
+
+Lastly, install librosa and soundfile using pip:
+```
+pip install librosa
+pip install soundfile
+```
+And on a Linux operating system, you will need to install `libsndfile` to work with `soundfile`:
+
+```
+sudo apt-get install libsndfile1
 ```
 
-<!-- USAGE -->
+### Project structure
+
+When reading data files, the scripts are assuming the project structure below; the scripts use relative paths so should run out-of-the-box if you use the same structure:
+
+```
+.
+├── .gitignore
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── src              <- main folder for all source code
+│   └── trim_and_transcribe.ipynb
+├── data             <- All project data, not published in git
+│   ├── audio_files
+│   ├── trimmed_audio
+│   └── Recordings.xlsx         
+└── output
+    └── transcripts
+```
+
 ## Usage
+The jupyter notebook that is used for creating transcripts can be found in the `src/` folder.
 
-This section describes how to run the project. It is highly recommended to use screenshots (on MacOS the combination `shift+cmd+4` and `spacebar` creates great screenshots).
-
-### Subsection
-
-Remember to divide the [Usage](#Usage) section in subsections for clarity.
-
-```sh
-python -m example.py
-```
 ## About the Project
 
 **Date**: Month Year
