@@ -1,6 +1,6 @@
 # Transcription d-lucea
 
-Include a short description of the repository/project here (few sentences)
+This GitHub repository contains the code used to transcribe parts of the Database of the Longitudinal Utrecht Collection of English Accents (D-LUCEA) using WhisperAI speech-to-text. The main aim was to enable the transcription of only relevant parts of each recording. Additionally, the repository includes scripts for processing the transcripts to enhance their usability for the subsequent corpus analysis using regular expressions in python.
 
 ## Getting Started
 
